@@ -26,6 +26,8 @@ namespace Cantina
         public frmFuncionarios()
         {
             InitializeComponent();
+            //executando o método desabilitar campos
+            desabilitarCampos();
         }
 
         private void frmFuncionarios_Load(object sender, EventArgs e)
@@ -58,6 +60,60 @@ namespace Cantina
         private void label9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+        //criando método desabilitar campos
+        public void desabilitarCampos()
+        {
+            txtCodigo.Enabled = false;
+            txtNome.Enabled = false;
+            txtEmail.Enabled = false;
+            txtEndereco.Enabled = false;
+            txtNumero.Enabled = false;
+            txtBairro.Enabled = false;
+            txtCidade.Enabled = false;
+            mskCEP.Enabled = false;
+            mskCPF.Enabled = false;
+            mskTelefone.Enabled = false;
+            cbbEstado.Enabled = false;
+            btnCadastrar.Enabled = false;
+            btnExcluir.Enabled = false;
+            btnAlterar.Enabled = false;
+            btnLimpar.Enabled = false;
+        }
+        //criando método habilitar campos
+        public void habilitarCampos()
+        {
+            txtNome.Enabled = true;
+            txtEmail.Enabled = true;
+            txtEndereco.Enabled = true;
+            txtNumero.Enabled = true;
+            txtBairro.Enabled = true;
+            txtCidade.Enabled = true;
+            mskCEP.Enabled = true;
+            mskCPF.Enabled = true;
+            mskTelefone.Enabled = true;
+            cbbEstado.Enabled = true;
+            btnCadastrar.Enabled = true;
+            btnLimpar.Enabled = true;
+        }
+        
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            frmMenuPrincipal abrir = new frmMenuPrincipal();
+            abrir.Show();
+            this.Hide();
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            habilitarCampos();
+            btnNovo.Enabled = false;
+            txtNome.Focus();
         }
     }
 }
