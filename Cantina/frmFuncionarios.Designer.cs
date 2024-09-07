@@ -206,6 +206,7 @@ namespace Cantina
             this.mskCEP.Name = "mskCEP";
             this.mskCEP.Size = new System.Drawing.Size(82, 26);
             this.mskCEP.TabIndex = 7;
+            this.mskCEP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mskCEP_KeyDown);
             // 
             // lblCEP
             // 
@@ -339,7 +340,7 @@ namespace Cantina
             // 
             this.txtBairro.Location = new System.Drawing.Point(543, 306);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(100, 26);
+            this.txtBairro.Size = new System.Drawing.Size(148, 26);
             this.txtBairro.TabIndex = 17;
             // 
             // lblCidade

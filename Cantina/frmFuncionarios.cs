@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using MosaicoSolutions.ViaCep;
 
 namespace Cantina
 {
@@ -167,6 +168,28 @@ namespace Cantina
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             limparCampos();
+        }
+        //criando o método busca cep
+        public void buscaCEP(string cep)
+        {
+            var viaCEPService = ViaCepService.Default();
+
+            var endereco = viaCEPService.ObterEndereco(cep);
+
+            txtEndereco.Text = endereco.Logradouro;
+            txtBairro.Text = endereco.Bairro;
+            txtCidade.Text = endereco.Localidade;
+            cbbEstado.Text = endereco.UF;
+
+        }
+        private void mskCEP_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                //busca o cep
+                buscaCEP(mskCEP.Text);
+                txtNumero.Focus();
+            }
         }
     }
 }

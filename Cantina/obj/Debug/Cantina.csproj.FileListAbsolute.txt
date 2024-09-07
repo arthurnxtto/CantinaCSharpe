@@ -23,3 +23,8 @@ C:\Users\Laboratorio-Info\Documents\Visual Studio 2019\CantinaCSharp\Cantina\obj
 C:\Users\Laboratorio-Info\Documents\Visual Studio 2019\CantinaCSharp\Cantina\obj\Debug\Cantina.exe
 C:\Users\Laboratorio-Info\Documents\Visual Studio 2019\CantinaCSharp\Cantina\obj\Debug\Cantina.pdb
 C:\Users\Laboratorio-Info\Documents\Visual Studio 2019\CantinaCSharp\Cantina\obj\Debug\Cantina.frmFuncionarios.resources
+C:\Users\Laboratorio-Info\Documents\Visual Studio 2019\CantinaCSharp\Cantina\bin\Debug\MosaicoSolutions.ViaCep.dll
+C:\Users\Laboratorio-Info\Documents\Visual Studio 2019\CantinaCSharp\Cantina\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Laboratorio-Info\Documents\Visual Studio 2019\CantinaCSharp\Cantina\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Laboratorio-Info\Documents\Visual Studio 2019\CantinaCSharp\Cantina\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Laboratorio-Info\Documents\Visual Studio 2019\CantinaCSharp\Cantina\obj\Debug\Cantina.csproj.CopyComplete
