@@ -115,5 +115,32 @@ namespace Cantina
             btnNovo.Enabled = false;
             txtNome.Focus();
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            //verificando se os campos estão preenchidos
+            if (txtNome.Text.Equals("") 
+                || txtEmail.Text.Equals("")
+                || mskCPF.Text.Equals("   .   .   -")
+                || mskTelefone.Text.Equals("     -")
+                || mskCEP.Text.Equals("     -")
+                || txtEndereco.Text.Equals("")
+                || txtNumero.Text.Equals("")
+                || txtBairro.Text.Equals("")
+                || txtCidade.Text.Equals("")
+                || cbbEstado.Text.Equals(""))
+            {
+                MessageBox.Show("Favor inserir valores.",
+                    "Sistema", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error,MessageBoxDefaultButton.Button1);
+            }
+            else
+            {
+                MessageBox.Show("Cadastrado com sucesso.",
+                    "Sistema", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+                desabilitarCampos();
+            }
+        }
     }
 }
