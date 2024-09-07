@@ -85,6 +85,26 @@ namespace Cantina
             btnAlterar.Enabled = false;
             btnLimpar.Enabled = false;
         }
+        //criando método limpar campos
+        public void limparCampos()
+        {
+            txtCodigo.Clear();
+            txtNome.Clear();
+            txtEmail.Clear();
+            txtEndereco.Clear();
+            txtNumero.Clear();
+            txtBairro.Clear();
+            txtCidade.Clear();
+            mskCEP.Clear();
+            mskCPF.Clear();
+            mskTelefone.Clear();
+            cbbEstado.Text = "";
+            btnCadastrar.Enabled = false;
+            btnExcluir.Enabled = false;
+            btnAlterar.Enabled = false;
+            btnLimpar.Enabled = false;
+            btnNovo.Enabled = true;
+        }
         //criando método habilitar campos
         public void habilitarCampos()
         {
@@ -140,7 +160,13 @@ namespace Cantina
                     "Sistema", MessageBoxButtons.OK,
                     MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
                 desabilitarCampos();
+                limparCampos();
             }
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            limparCampos();
         }
     }
 }
