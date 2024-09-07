@@ -103,20 +103,27 @@ namespace Cantina
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(621, 37);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 170);
             this.button1.TabIndex = 5;
             this.button1.Text = "&Pesquisar";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(621, 239);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(151, 170);
             this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
+            this.button2.Text = "&Limpar";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.button2.UseVisualStyleBackColor = true;
             // 
             // frmPesquisar

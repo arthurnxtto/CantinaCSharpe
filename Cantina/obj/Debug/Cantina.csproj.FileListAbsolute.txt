@@ -28,3 +28,4 @@ C:\Users\Laboratorio-Info\Documents\Visual Studio 2019\CantinaCSharp\Cantina\bin
 C:\Users\Laboratorio-Info\Documents\Visual Studio 2019\CantinaCSharp\Cantina\bin\Debug\Newtonsoft.Json.pdb
 C:\Users\Laboratorio-Info\Documents\Visual Studio 2019\CantinaCSharp\Cantina\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Laboratorio-Info\Documents\Visual Studio 2019\CantinaCSharp\Cantina\obj\Debug\Cantina.csproj.CopyComplete
+C:\Users\Laboratorio-Info\Documents\Visual Studio 2019\CantinaCSharp\Cantina\obj\Debug\Cantina.frmPesquisar.resources
