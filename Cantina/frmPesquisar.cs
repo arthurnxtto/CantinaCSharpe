@@ -21,5 +21,17 @@ namespace Cantina
         {
             
         }
+
+        private void rdbCodigo_CheckedChanged(object sender, EventArgs e)
+        {
+            txtDescricao.Enabled = true;
+            txtDescricao.Focus();
+        }
+
+        private void rdbNome_CheckedChanged(object sender, EventArgs e)
+        {
+            txtDescricao.Enabled = true;
+            txtDescricao.Focus();
+        }
     }
 }
