@@ -19,7 +19,22 @@ namespace Cantina
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if (rdbCodigo.Checked)
+            {
+                if (!txtDescricao.Text.Equals(""))
+                {
+                    ltbPesquisar.Items.Clear();
+                    ltbPesquisar.Items.Add(txtDescricao.Text);
+                }
+            }
+            if (rdbCodigo.Checked)
+            {
+                if (!txtDescricao.Text.Equals(""))
+                {
+                    ltbPesquisar.Items.Clear();
+                    ltbPesquisar.Items.Add(txtDescricao.Text);
+                }
+            }
         }
 
         private void rdbCodigo_CheckedChanged(object sender, EventArgs e)
@@ -32,6 +47,20 @@ namespace Cantina
         {
             txtDescricao.Enabled = true;
             txtDescricao.Focus();
+        }
+
+        public void limparCampos()
+        {
+            txtDescricao.Clear();
+            rdbCodigo.Checked = false;
+            rdbNome.Checked = false;
+            ltbPesquisar.Items.Clear();
+            txtDescricao.Enabled = false;
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            limparCampos();
         }
     }
 }
